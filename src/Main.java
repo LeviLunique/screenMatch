@@ -1,3 +1,6 @@
+import screenmatch.model.Movie;
+import screenmatch.model.Series;
+
 public class Main {
     public static void main(String[] args) {
         Movie myMovie = new Movie();
@@ -13,5 +16,12 @@ public class Main {
         System.out.println(myMovie.getRating());
         System.out.println(myMovie.getRatingCount());
         System.out.println(myMovie.getAverage());
+
+        Series mySeries = new Series();
+        mySeries.setTitle("Lost");
+        mySeries.setReleaseYear(2004);
+        mySeries.showInfo();
+        mySeries.setSeasons(10);
+        mySeries.setEpsiodesPerSeason(10);
     }
 }

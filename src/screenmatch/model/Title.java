@@ -1,4 +1,7 @@
-public class Movie {
+package screenmatch.model;
+
+public class Title {
+
     private String title;
     private int releaseYear;
     private boolean isIncludedInSubscription;
@@ -51,7 +54,7 @@ public class Movie {
 
 
     public void showInfo() {
-        System.out.println("Movie title: " + this.title);
+        System.out.println("screenmatch.model.Movie title: " + this.title);
         System.out.println("Release year: " + this.releaseYear);
     }
 
